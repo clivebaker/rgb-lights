@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
+gem 'capistrano-passenger'
 gem 'capistrano-bundler'
 gem 'execjs'
 gem 'therubyracer'
