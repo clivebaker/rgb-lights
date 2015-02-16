@@ -21,19 +21,26 @@ class HomeController < ApplicationController
   end
 
 
+def off
+    green(0)
+  blue(0)
+  red(0)
+
+end
+
 
 private
 
 def green(value)
-  system "echo \"17=#{value.to_f/100}\" > /dev/pi-blaster" 	
+  system "echo \"17=#{value.to_f}\" > /dev/pi-blaster" 	
 end
 
 def blue(value)
-  system "echo \"18=#{value.to_f/100}\" > /dev/pi-blaster"
+  system "echo \"18=#{value.to_f}\" > /dev/pi-blaster"
 end
 
 def red(value)
-  system "echo \"23=#{value.to_f/100}\" > /dev/pi-blaster"
+  system "echo \"23=#{value.to_f}\" > /dev/pi-blaster"
 end
 
 

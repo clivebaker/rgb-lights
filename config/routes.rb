@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
   post 'home/set_colour', as: :set_colour
+  post 'home/off', as: :off
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
