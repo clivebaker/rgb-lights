@@ -1,4 +1,12 @@
 
+<%= link_to "White", set_colour_path("rgb[colour]"=> "#ffffff"), remote: true, method: :post %>
+
+<%= link_to "Off", set_colour_path("rgb[colour]"=> "#000000"), remote: true, method: :post %>
+
+<%= link_to "Green", set_colour_path("rgb[colour]"=> "#00ff00"), remote: true, method: :post %>
+<%= link_to "Red", set_colour_path("rgb[colour]"=> "#ff0000"), remote: true, method: :post %>
+<%= link_to "Blue", set_colour_path("rgb[colour]"=> "#0000ff"), remote: true, method: :post %>
+
 
 <%= form_tag set_colour_path, remote: true do %>
 
